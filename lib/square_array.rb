@@ -1,8 +1,11 @@
-square_array(numbers)
-  count = 0
-  while count < numbers.length do
-    numbers.index ** numbers.index
-    count += 1 
+def square_array(numbers)
+  result = Array.new(numbers.size)
+
+  i = 0
+
+  while i < numbers.size
+    result[i] = numbers[i] ** 2
+    i += 1
   end
-  square_array(numbers)
-end 
+  result
+end
